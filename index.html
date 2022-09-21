@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div id="mobile-header">
+        <nav id="bar-1"><a id="my_logo" href="">My Logo</a></nav>
+        <nav id="bar-2"></nav>
+        <nav id="bar-3">
+          <img
+            id="display_menu"
+            src="images/toggle.png"
+            alt="display"
+            onclick="openMenu()"
+          />
+        </nav>
+        <div id="hamburg" class="overlay">
+          <a id="menu_close"> &times; </a>
+          <div id="show-menu">
+            <a id="nav-popup" href="#portfolio">Portfolio</a>
+            <a id="nav-popup" href="#about">About</a>
+            <a id="nav-popup" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <nav id="desktop-menu">
+        <div id="logo">
+          <a id="my_logo" href="">My Logo</a>
+        </div>
+        <ul id="desk-menu">
+          <li id="f"><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="details">
+      <h1 id="heading">I’m Kaweesi Glad to see you!</h1>
+      <p id="explanation">
+        I’m a software developer! I can help you build a product , feature or
+        website Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
+      <h1 class="connect">LET’S CONNECT</h1>
+      <ul class="media-icons" id="social-media">
+        <li>
+          <a><img src="images/twitter.png" alt="twitter" /></a>
+        </li>
+        <li>
+          <a><img src="images/Linkedin.png" alt="linkedin" /></a>
+        </li>
+        <li>
+          <a><img src="images/medium.png" alt="medium" /></a>
+        </li>
+        <li>
+          <a><img src="images/github.png" alt="github" /></a>
+        </li>
+        <li>
+          <a><img src="images/Angelist.png" alt="Angelist" /></a>
+        </li>
+      </ul>
+    </section>
+    <section id="portfolio" class="works-section"></section>
+    <section id="about" class="abt">
+      <div class="content-left">
+        <h1 id="my_self">About Myself</h1>
+        <p id="explanation">
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
+        </p>
+        <h1 class="connect" id="lets">LET’S CONNECT</h1>
+        <ul class="media-icons" id="media">
+          <li>
+            <img src="images/github.png" alt="github" />
+          </li>
+          <li>
+            <img src="images/Linkedin.png" alt="Linkedln" />
+          </li>
+          <li>
+            <img src="images/Angelist.png" alt="Angelist" />
+          </li>
+          <li>
+            <img src="images/twitter.png" alt="twitter" />
+          </li>
+
+          <li>
+            <img src="images/medium.png" alt="medium" />
+          </li>
+        </ul>
+        <div class="button-resume">
+          <button type="button" id="btn">Get my resume</button>
+        </div>
+      </div>
+      <div class="content-right">
+        <ul class="programming-list">
+          <li id="languagez">
+            <p>Languages</p>
+            <img class="arrows" src="images/down-arrow.png" alt="arrow" />
+          </li>
+          <li class="prog-lang">
+            <img src="images/js.png" alt="js" />
+            <p>JavaScript</p>
+          </li>
+          <li class="prog-lang">
+            <img src="images/css.png" alt="html" />
+            <p>CSS</p>
+          </li>
+          <li class="prog-lang">
+            <img src="images/html.png" alt="css" />
+            <p>HTML</p>
+          </li>
+          <li class="lang">
+            <p>FrameWorks</p>
+            <img class="arrows" src="images/forward-arrow.png" id="ar1" alt="" />
+          </li>
+          <li class="mark"></li>
+          <li class="lang">
+            <p>Skills</p>
+            <img class="arrows" src="images/forward-arrow.png" id="ar2" alt="" />
+          </li>
+          <li class="mark"></li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="contact-part">
+      <div class="bg-image">
+        <h1 class="contact-title">Contact me</h1>
+        <p class="contact-content">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form
+          action="https://formspree.io/f/xqkgeweb"
+          method="POST"
+          class="contact-form"
+        >
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Your Name"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="useremail"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="usermessage"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+          <p class="alert"></p>
+          <div class="btns btn-form">
+            <button class="btn" type="submit" id="betn">Get in touch</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="modal-example">
+      <div class="modal-head">
+        <h1 class="projectname"></h1>
+        <button type="button" class="closeModal">&times;</button>
+      </div>
+      <div class="modal__body">
+        <div class="short_desc">
+          <h4 class="company"></h4>
+          <span></span>
+          <h4 class="role"></h4>
+          <span></span>
+          <h6 class="year"></h6>
+        </div>
+        <img src="#" alt="img" class="modal-img" />
+        <div class="project-desc">
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+            voluptatem pariatur modi rerum error ea consequatur, excepturi eum
+            maiores! Quo quibusdam culpa ratione.?Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. !
+          </p>
+          <div class="desc_btn">
+            <ul class="project__lang">
+              <li><a href="" class="lang1" title="html">html</a></li>
+              <li><a href="" class="lang1" title="css">css</a></li>
+              <li>
+                <a href="#" class="lang1" title="javascript">javascript</a>
+              </li>
+            </ul>
+            <div class="final">
+              <button type="button" class="modal-btn">
+                See live <i class="fa fa-external-link" aria-hidden="true"></i>
+              </button>
+              <button type="button" class="modal-btn">
+                See source <i class="fa fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
